@@ -1,6 +1,6 @@
-﻿package sanity;
+package sanity;
 
-our $VERSION = '0.9'; # VERSION
+our $VERSION = '0.91'; # VERSION
 # ABSTRACT: The ONLY meta pragma you'll ever need!
 
 # use feature has to be difficult...
@@ -733,7 +733,7 @@ sanity - The ONLY meta pragma you'll ever need!
 
 =head1 VERSION
 
-version 0.9
+version 0.91
 
 =head1 SYNOPSIS
 

@@ -13,9 +13,8 @@ lib/sanity/BaseCalc.pm
 printuni.pl
 t/00-compile.t
 t/000-report-versions-tiny.t
-t/author-test-eol.t
 t/basic.t
-t/release-check-manifest.t
-t/release-no-tabs.t
-t/release-pod-syntax.t
-t/release-portability.t
+xt/author/test-eol.t
+xt/release/no-tabs.t
+xt/release/pod-syntax.t
+xt/release/portability.t

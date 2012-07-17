@@ -17,9 +17,6 @@ no_index:
     - examples
     - corpus
 prereqs:
-  configure:
-    requires:
-      ExtUtils::MakeMaker: 6.30
   runtime:
     recommends:
       Carp: 0
@@ -40,23 +37,17 @@ prereqs:
       utf8::all: 0
       vendorlib: 0
     requires:
-      Carp: 0
-      Encode: 0
       Import::Into: 1.001000
       List::MoreUtils: 0
-      Math::BigFloat: 0
-      Math::BigInt: 0
-      bigint: 0
       namespace::sweep: 0.004
-      strict: 0
-      utf8: 0
-      warnings: 0
+      perl: v5.8.8
   test:
     requires:
-      File::Find: 0
-      File::Temp: 0
       Test::More: 0.88
-provides: {}
+provides:
+  sanity:
+    file: lib/sanity.pm
+    version: 0.91
 release_status: stable
 resources:
   bugtracker:
@@ -67,7 +58,7 @@ resources:
     url: git://github.com/SineSwiper/sanity.git
     web: https://github.com/SineSwiper/sanity
   x_irc: irc://irc.perl.org/#sanity
-version: 0.9
+version: 0.91
 x_Dist_Zilla:
   plugins:
     -
@@ -77,10 +68,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Init
       name: Git::Init
-      version: 1.121820
-    -
-      class: Dist::Zilla::Plugin::Git::NextVersion
-      name: Git::NextVersion
       version: 1.121820
     -
       class: Dist::Zilla::Plugin::Git::GatherDir
@@ -131,6 +118,10 @@ x_Dist_Zilla:
       name: Test::Compile
       version: 1.112820
     -
+      class: Dist::Zilla::Plugin::RunExtraTests
+      name: RunExtraTests
+      version: 0.007
+    -
       class: Dist::Zilla::Plugin::PodSyntaxTests
       name: PodSyntaxTests
       version: 4.300020
@@ -138,10 +129,6 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::PodWeaver
       name: PodWeaver
       version: 3.101641
-    -
-      class: Dist::Zilla::Plugin::ExtraTests
-      name: ExtraTests
-      version: 4.300020
     -
       class: Dist::Zilla::Plugin::NoTabsTests
       name: NoTabsTests
@@ -159,10 +146,6 @@ x_Dist_Zilla:
       name: ReportVersions::Tiny
       version: 1.04
     -
-      class: Dist::Zilla::Plugin::Test::CheckManifest
-      name: Test::CheckManifest
-      version: 0.03
-    -
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: AutoPrereqs
       version: 4.300020
@@ -174,6 +157,10 @@ x_Dist_Zilla:
           type: recommends
       name: Prereqs
       version: 4.300020
+    -
+      class: Dist::Zilla::Plugin::PrereqsClean
+      name: PrereqsClean
+      version: 1.00
     -
       class: Dist::Zilla::Plugin::CheckPrereqsIndexed
       name: CheckPrereqsIndexed
@@ -207,13 +194,9 @@ x_Dist_Zilla:
       name: CopyFilesFromBuild
       version: 0.103510
     -
-      class: Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch
-      name: '@Git::CheckFor/Git::CheckFor::CorrectBranch'
-      version: 0.004
-    -
-      class: Dist::Zilla::Plugin::Git::CheckFor::Fixups
-      name: '@Git::CheckFor/Git::CheckFor::Fixups'
-      version: 0.004
+      class: Dist::Zilla::Plugin::TravisYML
+      name: TravisYML
+      version: ~
     -
       class: Dist::Zilla::Plugin::Git::Check
       name: '@Git/Check'
@@ -229,6 +212,10 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: '@Git/Push'
+      version: 1.121820
+    -
+      class: Dist::Zilla::Plugin::Git::CommitBuild
+      name: Git::CommitBuild
       version: 1.121820
     -
       class: Dist::Zilla::Plugin::TestRelease

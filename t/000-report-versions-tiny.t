@@ -12,7 +12,7 @@ my $v = "\n";
 
 eval {                     # no excuses!
     # report our Perl details
-    my $want = "any version";
+    my $want = 'v5.8.8';
     my $pv = ($^V || $]);
     $v .= "perl: $pv (wanted $want) on $^O from $^X\n\n";
 };
@@ -49,21 +49,14 @@ sub pmver {
 }
 
 eval { $v .= pmver('Carp','any version') };
-eval { $v .= pmver('Encode','any version') };
-eval { $v .= pmver('ExtUtils::MakeMaker','6.30') };
-eval { $v .= pmver('File::Find','any version') };
-eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('IO::All','any version') };
 eval { $v .= pmver('Import::Into','1.001000') };
 eval { $v .= pmver('List::MoreUtils','any version') };
-eval { $v .= pmver('Math::BigFloat','any version') };
-eval { $v .= pmver('Math::BigInt','any version') };
 eval { $v .= pmver('Test::More','0.88') };
 eval { $v .= pmver('Toolkit','any version') };
 eval { $v .= pmver('autolocale','any version') };
 eval { $v .= pmver('autovivification','any version') };
 eval { $v .= pmver('bareword::filehandles','any version') };
-eval { $v .= pmver('bigint','any version') };
 eval { $v .= pmver('criticism','any version') };
 eval { $v .= pmver('indirect','any version') };
 eval { $v .= pmver('multidimensional','any version') };
@@ -72,13 +65,10 @@ eval { $v .= pmver('namespace::clean','any version') };
 eval { $v .= pmver('namespace::functions','any version') };
 eval { $v .= pmver('namespace::sweep','0.004') };
 eval { $v .= pmver('perl5i','any version') };
-eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('subs::auto','any version') };
 eval { $v .= pmver('true','any version') };
-eval { $v .= pmver('utf8','any version') };
 eval { $v .= pmver('utf8::all','any version') };
 eval { $v .= pmver('vendorlib','any version') };
-eval { $v .= pmver('warnings','any version') };
 
 
 

@@ -1,6 +1,22 @@
 Revision History for sanity
 ===========================
 
+v0.91 2012-07-17
+----------------
+
+commit 4cc5251e157c73fe39c2026b1bce2fb8ca6b4482
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Jul 17 14:29:50 2012 -0400
+
+    Fix weird BOM issue with sanity.pm, which was causing an undetected
+       package in Module::Metadata
+
+commit 38e5f11d1eaaca25f42a26036c921cd7de78864f
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Mon Jul 16 14:27:47 2012 -0400
+
+    dist.ini adjustments
+
 ===================================
 End of changes in the last 365 days
 ===================================

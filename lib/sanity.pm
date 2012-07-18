@@ -1,6 +1,6 @@
 package sanity;
 
-our $VERSION = '0.91'; # VERSION
+our $VERSION = '0.92'; # VERSION
 # ABSTRACT: The ONLY meta pragma you'll ever need!
 
 # use feature has to be difficult...
@@ -733,7 +733,7 @@ sanity - The ONLY meta pragma you'll ever need!
 
 =head1 VERSION
 
-version 0.91
+version 0.92
 
 =head1 SYNOPSIS
 
@@ -846,7 +846,7 @@ will hunt you down and break your keyboard in half.)
 =head3 The Default
 
 What does C<sanity> do without any parameters?  Why my personal preference, of course :)
-It's listed in the C<meta pragma> section of the L<LIST OF flags> below.  I detail the
+It's listed in the C<meta pragma> section of the L<LIST OF FLAGS> below.  I detail the
 reasons behind my choices L<here|sanity::sanity>.
 
 =head2 Hashes
@@ -947,7 +947,7 @@ normally fatally error.
 
 This feature was borrowed from L<strictures> and tweaked.   
 
-=head1 LIST OF flags
+=head1 LIST OF FLAGS
 
 =head2 Emulation of "meta pragmas"
 
@@ -986,7 +986,7 @@ This feature was borrowed from L<strictures> and tweaked.
    common::sense: (without the "memory usage" BS)
       utf8
       strict qw(subs vars)
-      feature qw(say state flag)
+      feature qw(say state switch)
       no warnings
       warnings FATAL => qw(closed threads internal debugging pack malloc portable prototype
                            inplace io pipe unpack deprecated glob digit printf
@@ -995,7 +995,7 @@ This feature was borrowed from L<strictures> and tweaked.
    uni::perl: (ditto)
       v5.10
       strict
-      feature qw(say state flag)
+      feature qw(say state switch)
       no warnings
       warnings qw(FATAL closed threads internal debugging pack substr malloc
                       unopened portable prototype inplace io pipe unpack regexp
@@ -1015,7 +1015,7 @@ This feature was borrowed from L<strictures> and tweaked.
       no strict 'refs'
       warnings FATAL => 'all'
       no warnings qw(uninitialized)
-      feature qw(say state flag)
+      feature
       no autovivification qw(fetch exists delete store strict)
       no indirect 'fatal'
       no multidimensional

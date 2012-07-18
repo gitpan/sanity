@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
     "List::MoreUtils" => 0,
     "namespace::sweep" => "0.004"
   },
-  "VERSION" => "0.91",
+  "VERSION" => "0.92",
   "test" => {
     "TESTS" => "t/*.t"
   }

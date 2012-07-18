@@ -1,8 +1,23 @@
 Revision History for sanity
 ===========================
 
+v0.92 2012-07-17
+----------------
+
+commit 7ffeb8efdd320db4ae4ad17eba7ffadd48a57af8
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Jul 17 23:07:58 2012 -0400
+
+    Fix overzealous replacement of switch->flag in POD
+
 v0.91 2012-07-17
 ----------------
+
+commit 0f59169b76672ccbafa9b623d6be0d8fd68a0053
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Jul 17 19:28:44 2012 -0400
+
+    Release v0.91
 
 commit 4cc5251e157c73fe39c2026b1bce2fb8ca6b4482
 Author: Brendan Byrd <Perl@ResonatorSoft.org>

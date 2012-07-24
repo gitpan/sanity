@@ -47,7 +47,7 @@ prereqs:
 provides:
   sanity:
     file: lib/sanity.pm
-    version: 0.92
+    version: 0.93
 release_status: stable
 resources:
   bugtracker:
@@ -58,7 +58,7 @@ resources:
     url: git://github.com/SineSwiper/sanity.git
     web: https://github.com/SineSwiper/sanity
   x_irc: irc://irc.perl.org/#sanity
-version: 0.92
+version: 0.93
 x_Dist_Zilla:
   plugins:
     -
@@ -81,6 +81,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::OurPkgVersion
       name: OurPkgVersion
       version: 0.004000
+    -
+      class: Dist::Zilla::Plugin::PodWeaver
+      name: PodWeaver
+      version: 3.101641
     -
       class: Dist::Zilla::Plugin::PruneCruft
       name: PruneCruft
@@ -126,10 +130,6 @@ x_Dist_Zilla:
       name: PodSyntaxTests
       version: 4.300020
     -
-      class: Dist::Zilla::Plugin::PodWeaver
-      name: PodWeaver
-      version: 3.101641
-    -
       class: Dist::Zilla::Plugin::RunExtraTests
       name: RunExtraTests
       version: 0.007
@@ -149,6 +149,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::ReportVersions::Tiny
       name: ReportVersions::Tiny
       version: 1.05
+    -
+      class: Dist::Zilla::Plugin::Test::CheckManifest
+      name: Test::CheckManifest
+      version: 0.03
     -
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: AutoPrereqs
@@ -206,6 +210,10 @@ x_Dist_Zilla:
       name: Git::CheckFor::CorrectBranch
       version: 0.004
     -
+      class: Dist::Zilla::Plugin::Git::CommitBuild
+      name: Git::CommitBuild
+      version: 1.121820
+    -
       class: Dist::Zilla::Plugin::Git::Check
       name: '@Git/Check'
       version: 1.121820
@@ -220,10 +228,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: '@Git/Push'
-      version: 1.121820
-    -
-      class: Dist::Zilla::Plugin::Git::CommitBuild
-      name: Git::CommitBuild
       version: 1.121820
     -
       class: Dist::Zilla::Plugin::TestRelease

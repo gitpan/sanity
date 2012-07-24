@@ -1,7 +1,7 @@
 package  # hide from PAUSE
    sanity::BaseCalc;
 
-our $VERSION = '0.92'; # VERSION
+our $VERSION = '0.93'; # VERSION
 # ABSTRACT: DO NOT USE!
 
 use strict;
@@ -190,13 +190,11 @@ sub to_base {
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 sanity::BaseCalc - DO NOT USE!
-
-=head1 VERSION
-
-version 0.92
 
 =head1 DESCRIPTION
 
@@ -208,6 +206,14 @@ Do NOT use for anything else, as it will go away soon.
 =head1 SEE ALSO
 
 L<Math::BaseCalc>
+
+=head1 AVAILABILITY
+
+The project homepage is L<https://github.com/SineSwiper/sanity/wiki>.
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see L<https://metacpan.org/module/sanity/>.
 
 =head1 AUTHOR
 

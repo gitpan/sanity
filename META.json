@@ -58,7 +58,7 @@
    "provides" : {
       "sanity" : {
          "file" : "lib/sanity.pm",
-         "version" : "0.92"
+         "version" : "0.93"
       }
    },
    "release_status" : "stable",
@@ -74,7 +74,7 @@
       },
       "x_irc" : "irc://irc.perl.org/#sanity"
    },
-   "version" : "0.92",
+   "version" : "0.93",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -101,6 +101,11 @@
             "class" : "Dist::Zilla::Plugin::OurPkgVersion",
             "name" : "OurPkgVersion",
             "version" : "0.004000"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodWeaver",
+            "name" : "PodWeaver",
+            "version" : "3.101641"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
@@ -158,11 +163,6 @@
             "version" : "4.300020"
          },
          {
-            "class" : "Dist::Zilla::Plugin::PodWeaver",
-            "name" : "PodWeaver",
-            "version" : "3.101641"
-         },
-         {
             "class" : "Dist::Zilla::Plugin::RunExtraTests",
             "name" : "RunExtraTests",
             "version" : "0.007"
@@ -186,6 +186,11 @@
             "class" : "Dist::Zilla::Plugin::ReportVersions::Tiny",
             "name" : "ReportVersions::Tiny",
             "version" : "1.05"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::CheckManifest",
+            "name" : "Test::CheckManifest",
+            "version" : "0.03"
          },
          {
             "class" : "Dist::Zilla::Plugin::AutoPrereqs",
@@ -259,6 +264,11 @@
             "version" : "0.004"
          },
          {
+            "class" : "Dist::Zilla::Plugin::Git::CommitBuild",
+            "name" : "Git::CommitBuild",
+            "version" : "1.121820"
+         },
+         {
             "class" : "Dist::Zilla::Plugin::Git::Check",
             "name" : "@Git/Check",
             "version" : "1.121820"
@@ -276,11 +286,6 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::Push",
             "name" : "@Git/Push",
-            "version" : "1.121820"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::Git::CommitBuild",
-            "name" : "Git::CommitBuild",
             "version" : "1.121820"
          },
          {

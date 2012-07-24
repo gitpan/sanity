@@ -1,8 +1,24 @@
 Revision History for sanity
 ===========================
 
+v0.93 2012-07-24
+----------------
+
+commit a61f236c768455b90c9dfb1637600a930fe0ec6e
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Jul 24 15:36:02 2012 -0400
+
+    Add weaver stuff
+    Fix sanity to use namespace::sweep, like it's suppose to
+
 v0.92 2012-07-17
 ----------------
+
+commit 426420f583f043d87de893be77e34104322c743a
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Jul 17 23:28:56 2012 -0400
+
+    Release v0.92
 
 commit 7ffeb8efdd320db4ae4ad17eba7ffadd48a57af8
 Author: Brendan Byrd <Perl@ResonatorSoft.org>

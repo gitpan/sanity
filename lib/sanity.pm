@@ -1,6 +1,6 @@
 package sanity;
 
-our $VERSION = '0.92'; # VERSION
+our $VERSION = '0.93'; # VERSION
 # ABSTRACT: The ONLY meta pragma you'll ever need!
 
 # use feature has to be difficult...
@@ -381,7 +381,7 @@ my %ALIAS = (
       v5.10.1 utf8 open/utf8 open/std mro/c3 strict/subs strict/vars feature
       warnings/all/FATAL -warnings/uninitialized/FATAL
       NO:autovivification NO:autovivification/store NO:autovivification/strict
-      NO:indirect/fatal NO:multidimensional namespace::clean
+      NO:indirect/fatal NO:multidimensional namespace::sweep
    )],
    'Acme::Very::Modern::Perl' => [qw(Modern::Perl -mro/dfs mro/c3 utf8 open/utf8 open/std common::sense perl5i::latest Toolkit Carp)],
 );
@@ -727,13 +727,11 @@ sub decode_pragmahash {
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 sanity - The ONLY meta pragma you'll ever need!
-
-=head1 VERSION
-
-version 0.92
 
 =head1 SYNOPSIS
 
@@ -1128,6 +1126,39 @@ Am I missing something?  Let me know.
 =head1 TODO
 
 Actually need to write sanity::sanity POD.
+
+=head1 AVAILABILITY
+
+The project homepage is L<https://github.com/SineSwiper/sanity/wiki>.
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see L<https://metacpan.org/module/sanity/>.
+
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
+
+=head1 SUPPORT
+
+=head2 Internet Relay Chat
+
+You can get live help by using IRC ( Internet Relay Chat ). If you don't know what IRC is,
+please read this excellent guide: L<http://en.wikipedia.org/wiki/Internet_Relay_Chat>. Please
+be courteous and patient when talking to us, as we might be busy or sleeping! You can join
+those networks/channels and get help:
+
+=over 4
+
+=item *
+
+irc.perl.org
+
+You can connect to the server at 'irc.perl.org' and join this channel: #distzilla then talk to this person for help: SineSwiper.
+
+=back
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests via L<L<https://github.com/SineSwiper/sanity/issues>|GitHub>.
 
 =head1 AUTHOR
 

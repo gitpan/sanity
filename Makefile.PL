@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.008008;
+use 5.010001;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -12,7 +12,8 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "The ONLY meta pragma you'll ever need!",
   "AUTHOR" => "Brendan Byrd <BBYRD\@CPAN.org>",
   "BUILD_REQUIRES" => {
-    "Test::More" => "0.88"
+    "Test::CheckDeps" => "0.002",
+    "Test::UseAllModules" => "0.10"
   },
   "CONFIGURE_REQUIRES" => {},
   "DISTNAME" => "sanity",
@@ -21,10 +22,9 @@ my %WriteMakefileArgs = (
   "NAME" => "sanity",
   "PREREQ_PM" => {
     "Import::Into" => "1.001000",
-    "List::MoreUtils" => 0,
-    "namespace::sweep" => "0.004"
+    "List::MoreUtils" => "0.23"
   },
-  "VERSION" => "0.93",
+  "VERSION" => "0.94",
   "test" => {
     "TESTS" => "t/*.t"
   }

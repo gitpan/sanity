@@ -1,6 +1,6 @@
 package sanity;
 
-our $VERSION = '0.93'; # VERSION
+our $VERSION = '0.94'; # VERSION
 # ABSTRACT: The ONLY meta pragma you'll ever need!
 
 # use feature has to be difficult...
@@ -14,7 +14,6 @@ no strict 'refs';
 #use feature ($VER_PACK);
 use warnings FATAL => 'all';
 no warnings qw(uninitialized);
-use namespace::sweep 0.004;
 
 # Need this for some of the bit math
 use bigint;            ### LAZY: I should probably be using Math::BigInt... ###
@@ -344,6 +343,7 @@ my %ALIAS = (
    # mimicry of other "meta pragma" modules
    'ex::caution'  => [qw(strict warnings)],
    'NO:crap'      => [qw(strict warnings)],
+   'shit'         => [qw(strict warnings)],
    'latest'       => [qw(strict warnings feature)],
    'sane'         => [qw(strict warnings feature utf8)],
    'NO:nonsense'  => [qw(strict warnings true namespace::autoclean)],
@@ -381,7 +381,7 @@ my %ALIAS = (
       v5.10.1 utf8 open/utf8 open/std mro/c3 strict/subs strict/vars feature
       warnings/all/FATAL -warnings/uninitialized/FATAL
       NO:autovivification NO:autovivification/store NO:autovivification/strict
-      NO:indirect/fatal NO:multidimensional namespace::sweep
+      NO:indirect/fatal NO:multidimensional
    )],
    'Acme::Very::Modern::Perl' => [qw(Modern::Perl -mro/dfs mro/c3 utf8 open/utf8 open/std common::sense perl5i::latest Toolkit Carp)],
 );
@@ -953,6 +953,7 @@ This feature was borrowed from L<strictures> and tweaked.
       strict
       warnings
    NO:crap:  # Same as above
+   shit:     # Same as above
    latest:
       strict
       warnings
@@ -1017,7 +1018,6 @@ This feature was borrowed from L<strictures> and tweaked.
       no autovivification qw(fetch exists delete store strict)
       no indirect 'fatal'
       no multidimensional
-      namespace::sweep
    perl5i::0 / 1 / 2 / latest:
       [the real module] (the pragma is too insane to try to duplicate here)
    Acme::Very::Modern::Perl:  (a joke, but it's still here all the same)

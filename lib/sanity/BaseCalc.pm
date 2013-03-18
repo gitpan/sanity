@@ -1,12 +1,12 @@
 package  # hide from PAUSE
    sanity::BaseCalc;
 
-our $VERSION = '0.94'; # VERSION
+our $VERSION = '0.95'; # VERSION
 # ABSTRACT: DO NOT USE!
 
 use strict;
 use Carp;
-use Math::BigInt;
+use Math::BigInt 1.78;  # 1.78 = round_mode => common
 use Math::BigFloat;
 
 # configure some basic big number stuff
@@ -221,7 +221,7 @@ Brendan Byrd <BBYRD@CPAN.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Brendan Byrd.
+This software is Copyright (c) 2013 by Brendan Byrd.
 
 This is free software, licensed under:
 

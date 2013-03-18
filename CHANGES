@@ -1,8 +1,31 @@
 Revision History for sanity
 ===========================
 
+v0.95 2013-03-18
+----------------
+
+commit e0898518bfaefdc958c0ac6dcf7919a071aef5ce
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Mon Mar 18 12:08:05 2013 -0400
+
+    Fix $author_mode to be a bit less zealous (Issue #1)
+
+commit 906e91fa7a8a78aa062bcbda7f457795c3c2023a
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Mon Mar 18 11:57:39 2013 -0400
+
+    Add some extra modules
+    Make sure POD encoding is UTF-8, so that the SYNOPSIS shows up right
+    Fix version dep of Math::BigInt
+
 v0.94 2012-10-02
 ----------------
+
+commit 0d7a99222077d96bd1387e0d0744569dec4446d1
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Oct 2 14:55:54 2012 -0400
+
+    Release v0.94
 
 commit 4fbe24b1e601ce180606b65bbb6ea774075072b7
 Author: Brendan Byrd <Perl@ResonatorSoft.org>

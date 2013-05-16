@@ -1,7 +1,7 @@
 package  # hide from PAUSE
    sanity::BaseCalc;
 
-our $VERSION = '0.95'; # VERSION
+our $VERSION = '0.96'; # VERSION
 # ABSTRACT: DO NOT USE!
 
 use strict;
@@ -187,6 +187,7 @@ sub to_base {
 
 1;
 
+__END__
 
 =pod
 
@@ -219,6 +220,10 @@ site near you, or see L<https://metacpan.org/module/sanity/>.
 
 Brendan Byrd <BBYRD@CPAN.org>
 
+=head1 CONTRIBUTOR
+
+Brendan Byrd <Perl@ResonatorSoft.org>
+
 =head1 COPYRIGHT AND LICENSE
 
 This software is Copyright (c) 2013 by Brendan Byrd.
@@ -228,7 +233,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

@@ -1,6 +1,6 @@
 package sanity;
 
-our $VERSION = '0.95'; # VERSION
+our $VERSION = '0.96'; # VERSION
 # ABSTRACT: The ONLY meta pragma you'll ever need!
 
 # use feature has to be difficult...
@@ -726,9 +726,11 @@ sub decode_pragmahash {
 # warnings void + bigint + 1; + perl sanity.pm = "Useless use of a constant (1) in void context"
 1;
 
-
+__END__
 
 =pod
+
+=encoding utf-8
 
 =head1 NAME
 
@@ -1160,17 +1162,21 @@ those networks/channels and get help:
 
 irc.perl.org
 
-You can connect to the server at 'irc.perl.org' and join this channel: #distzilla then talk to this person for help: SineSwiper.
+You can connect to the server at 'irc.perl.org' and talk to this person for help: SineSwiper.
 
 =back
 
 =head2 Bugs / Feature Requests
 
-Please report any bugs or feature requests via L<L<https://github.com/SineSwiper/sanity/issues>|GitHub>.
+Please report any bugs or feature requests via L<https://github.com/SineSwiper/sanity/issues>.
 
 =head1 AUTHOR
 
 Brendan Byrd <BBYRD@CPAN.org>
+
+=head1 CONTRIBUTOR
+
+Brendan Byrd <Perl@ResonatorSoft.org>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -1181,7 +1187,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-
